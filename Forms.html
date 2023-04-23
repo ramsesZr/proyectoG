@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Forms</title>
+</head>
+<body>
+
+    <h1 class="p-5">----Form Control----</h1>
+
+    <section class="p-5">
+
+        <section class="mb-3">
+            <label for="correo1" class="form-label">Correo Electronico</label>
+            <input type="correo2" class="form-control" id="correo1" placeholder="nombre@ejemplo.com">
+        </section>
+    
+        <section class="mb-3">
+            <label for="texto1" class="form-label">Texto de Tarea</label>
+            <textarea class="form-control" id="texto1" rows="3" placeholder="¡Escriba Aqui!"></textarea>
+        </section>
+
+    </section>
+
+
+    <section class="p-5">
+
+        <h3>----Select</h3>
+
+        <select class="form-select" aria-label="PorDefecto">
+            <option selected>¡Abrir Seleccion!</option>
+            <option value="1">Naruto Uzumaki</option>
+            <option value="2">Itachi Uchiha</option>
+            <option value="3">¿¡Abuela Tsunade!?..........</option>
+        </select>
+
+    </section>
+
+
+    <section class="p-5">
+
+        <h3>----Checks</h3>
+
+        <section class="form-check">
+            <input type="checkbox" class="form-check-input" value="" id="flexCheckDefault">
+            <label for="flexCheckDefault" class="form-check-label">Check Predeterminado</label>
+        </section>
+
+        <section class="form-check">
+            <input type="checkbox" class="form-check-input" value="" id="fleCheckChecked" checked>
+            <label for="fleCheckChecked" class="form-check-label">Check Marcado</label>
+        </section>
+
+    </section>
+
+
+    <section class="p-5">
+        
+        <h3>----Radios</h3>
+
+        <section class="form-check">
+            <input type="radio" class="form-check-input" name="flexRadioDefault" id="flexRadioDefault1">
+            <label for="flexRadioDefault1" class="form-check-label">Radio Predeterminado</label>
+        </section>
+
+        <section class="form-check">
+            <input type="radio" class="form-check-input" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label for="flexRadioDefault2" class="form-check-label">Radio Predeterminado Marcado</label>
+        </section>
+
+    </section>
+
+
+    <section class="p-5">
+
+        <h3>----Range</h3>
+
+        <label for="customRange1" class="form-label">Rango</label>
+        <input type="range" class="form-range" id="customRange1">
+
+    </section>
+
+
+    <section class="p-5">
+
+        <h3>----Input Group</h3>
+
+        <section class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon">@</span>
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="addon1">
+        </section>
+
+        <section class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Correo" aria-label="Correo" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">@ejemplo.com</span>
+        </section>
+
+        <section class="mb-3">
+            <label for="basic-url" class="form-label">Tu URL</label>
+            <section class="input-group">
+                <span class="input-group-text" id="basic-addon3">https://ejemplo.com/usuarios</span>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+            </section>
+            <section class="form-text" id="basic-addon4">Ejemplo para Ayuda</section>
+        </section>
+
+        <section class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="text" class="form-control" aria-label="Amount">
+            <span class="input-group-text">.00</span>
+        </section>
+
+        <section class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Servidor" aria-label="Servidor">
+        </section>
+
+        <section class="input-group">
+            <span class=" input-group-text">Texto Extra</span>
+            <textarea class="form-control" aria-label="Texto Extra"></textarea>
+        </section>
+
+    </section>
+
+
+    <section class="p-5">
+
+        <h3>----Floating Labels</h3>
+
+        <section class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="nombre@ejemplo.com">
+            <label for="floatingInput">Correo Electronico</label>
+        </section>
+
+        <section class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
+            <label for="floatingPassword">Contraseña</label>
+        </section>
+
+    </section>
+
+
+    <section class="p-5">
+
+        <h3>----Validations</h3>
+
+        <form class="row g-3 needs-validation" novalidate>
+            <section class="col-md-4">
+                <label for="validationCustom01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationCustom01" value="Jason" required>
+                <section class="valid-feedback">
+                    ¡Perfecto, como un Dunk!
+                </section>
+            </section>
+
+            <section class="col-md-4">
+                <label for="validationCustom02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationCustom02" value="Williams" required>
+                <section class="valid-feedback">
+                    ¡Wow!
+                </section>
+            </section>
+
+            <section class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Username</label>
+                <section class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <section class="invalid-feedback">
+                        Ingrese un Nombre Por favor
+                    </section>
+                </section>
+            </section>
+
+            <section class="col-md-6">
+                <label for="validationCustom03" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <section class="invalid-feedback">
+                    Ciudad Invalida 
+                </section>
+            </section>
+
+            <section class="col-md-3">
+                <label for="validationCustom04" class="form-label">Estado</label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Seleccione...</option>
+                    <option>...</option>
+                </select>
+                <section class="invalid-feedback">
+                    Estado Invalido
+                </section>
+            </section>
+
+            <section class="col-md-3">
+                <label for="validationCustom05" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <section class="invalid-feedback">
+                    Zip Invalida
+                </section>
+            </section>
+
+            <section class="col-12">
+                <section class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Acepto terminos y condiciones.
+                    </label>
+                    <section class="invalid-feedback">
+                        Importante Aceptar Terminos.
+                    </section>
+                </section>
+            </section>
+
+            <section class="col-12">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </section>
+        </form>
+
+    </section>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+        
+        </script>
+</body>
+</html>
