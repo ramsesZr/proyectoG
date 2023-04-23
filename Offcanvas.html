@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+    <title>Offcanvas</title>
+</head>
+<body>
+    <h1 class="p-5">----Offcanvas----</h1>
+
+    <section class="p-5">
+
+        <h3>Offcanvas components</h3>
+        <h3>Refresh page</h3>
+
+        <section class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+            <section class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </section>
+            <section class="offcanvas-body">
+              Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
+            </section>
+        </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Live demo</h3>
+
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            Link with href
+          </a>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            Button with data-bs-target
+          </button>
+          
+          <section class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <section class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </section>
+            <section class="offcanvas-body">
+              <section>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+              </section>
+              <section class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </section>
+            </section>
+          </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Body scrolling</h3>
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
+        <section class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <section class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </section>
+            <section class="offcanvas-body">
+                <p>Try scrolling the rest of the page to see this option in action.</p>
+            </section>
+        </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Body scrolling and backdrop</h3>
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>
+        <section class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <section class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </section>
+            <section class="offcanvas-body">
+                <p>Try scrolling the rest of the page to see this option in action.</p>
+            </section>
+        </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Static backdrop</h3>
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+            Toggle static offcanvas
+          </button>
+          
+          <section class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <section class="offcanvas-header">
+              <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </section>
+            <section class="offcanvas-body">
+              <section>
+                I will not close if you click outside of me.
+              </section>
+            </section>
+        </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Responsive</h3>
+
+        <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Toggle offcanvas</button>
+        <div class="alert alert-info d-none d-lg-block">Resize your browser to show the responsive offcanvas toggle.</div>
+        <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Responsive offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p class="mb-0">This is content within an <code>.offcanvas-lg</code>.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Placement</h3>
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle top offcanvas</button>
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur adipisci tempora beatae? Velit explicabo numquam, labore hic quia illo odio vero error minima natus, voluptate sit pariatur tempore quo molestias?
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>

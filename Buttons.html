@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+    <title>Buttons (Button group, Close button)</title>
+</head>
+<body>
+    <h1 class="p-5">----Buttons----</h1>
+
+    <section class="p-5">
+
+        <h3>Base class</h3>
+
+        <button type="button" class="btn">Base class</button>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Variants</h3>
+
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+
+        <button type="button" class="btn btn-link">Link</button>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Button tags</h3>
+
+        <a class="btn btn-primary" href="#" role="button">Link</a>
+        <button class="btn btn-primary" type="submit">Button</button>
+        <input class="btn btn-primary" type="button" value="Input">
+        <input class="btn btn-primary" type="submit" value="Submit">
+        <input class="btn btn-primary" type="reset" value="Reset">
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Outline buttons</h3>
+
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Sizes</h3>
+
+        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+
+        <button type="button" class="btn btn-primary btn-sm">Small button</button>
+        <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+
+        <button type="button" class="btn btn-primary"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+        Custom button
+        </button>
+
+    </section>
+
+    <section class="p-5">
+
+        <button type="button" class="btn btn-primary btn-sm">Small button</button>
+        <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+
+    </section>
+
+    <section class="p-5">
+
+        <button type="button" class="btn btn-primary"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+        Custom button
+        </button>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Disabled state</h3>
+
+        <button type="button" class="btn btn-primary" disabled>Primary button</button>
+        <button type="button" class="btn btn-secondary" disabled>Button</button>
+        <button type="button" class="btn btn-outline-primary" disabled>Primary button</button>
+        <button type="button" class="btn btn-outline-secondary" disabled>Button</button>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Block buttons</h3>
+
+        <section class="d-grid gap-2">
+            <button class="btn btn-primary" type="button">Button</button>
+            <button class="btn btn-primary" type="button">Button</button>
+        </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Variants</h3>
+
+        <section class="d-grid gap-2 d-md-block">
+            <button class="btn btn-primary" type="button">Button</button>
+            <button class="btn btn-primary" type="button">Button</button>
+        </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Variants</h3>
+
+        <section class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="button">Button</button>
+            <button class="btn btn-primary" type="button">Button</button>
+        </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Variants</h3>
+
+        <section class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary me-md-2" type="button">Button</button>
+            <button class="btn btn-primary" type="button">Button</button>
+        </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Button plugin</h3>
+        <h3>Toggle states</h3>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>
+        <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
+        <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled toggle button</button>
+
+    </section>
+
+    <h1 class="p-5">----Button group----</h1>
+
+    <section class="p-5">
+
+        <h3>Basic example</h3>
+
+        <section class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Left</button>
+            <button type="button" class="btn btn-primary">Middle</button>
+            <button type="button" class="btn btn-primary">Right</button>
+        </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Variants</h3>
+
+        <section class="btn-group">
+            <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
+            <a href="#" class="btn btn-primary">Link</a>
+            <a href="#" class="btn btn-primary">Link</a>
+        </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Mixed styles</h3>
+
+        <section class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-danger">Left</button>
+            <button type="button" class="btn btn-warning">Middle</button>
+            <button type="button" class="btn btn-success">Right</button>
+        </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Outlined styles</h3>
+
+        <section class="btn-group" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-primary">Left</button>
+            <button type="button" class="btn btn-outline-primary">Middle</button>
+            <button type="button" class="btn btn-outline-primary">Right</button>
+        </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Checkbox and radio button groups</h3>
+
+        <section class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+          
+            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+          
+            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
+        </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Variants</h3>
+
+        <section class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+        </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Button toolbar</h3>
+
+        <section class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <section class="btn-group me-2" role="group" aria-label="First group">
+              <button type="button" class="btn btn-primary">1</button>
+              <button type="button" class="btn btn-primary">2</button>
+              <button type="button" class="btn btn-primary">3</button>
+              <button type="button" class="btn btn-primary">4</button>
+            </section>
+            <section class="btn-group me-2" role="group" aria-label="Second group">
+              <button type="button" class="btn btn-secondary">5</button>
+              <button type="button" class="btn btn-secondary">6</button>
+              <button type="button" class="btn btn-secondary">7</button>
+            </section>
+            <section class="btn-group" role="group" aria-label="Third group">
+              <button type="button" class="btn btn-info">8</button>
+            </section>
+        </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Variants</h3>
+
+        <section class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+            <section class="btn-group me-2" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-secondary">1</button>
+              <button type="button" class="btn btn-outline-secondary">2</button>
+              <button type="button" class="btn btn-outline-secondary">3</button>
+              <button type="button" class="btn btn-outline-secondary">4</button>
+            </section>
+            <section class="input-group">
+              <section class="input-group-text" id="btnGroupAddon">@</section>
+              <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+            </section>
+        </section>
+          
+          <section class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+            <section class="btn-group" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-secondary">1</button>
+              <button type="button" class="btn btn-outline-secondary">2</button>
+              <button type="button" class="btn btn-outline-secondary">3</button>
+              <button type="button" class="btn btn-outline-secondary">4</button>
+            </section>
+            <section class="input-group">
+              <section class="input-group-text" id="btnGroupAddon2">@</section>
+              <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon2">
+            </section>
+          </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Sizing</h3>
+
+        <section class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+            <button type="button" class="btn btn-outline-primary">Left</button>
+            <button type="button" class="btn btn-outline-primary">Middle</button>
+            <button type="button" class="btn btn-outline-primary">Right</button>
+        </section>
+          <br>
+          <section class="btn-group" role="group" aria-label="Default button group">
+            <button type="button" class="btn btn-outline-primary">Left</button>
+            <button type="button" class="btn btn-outline-primary">Middle</button>
+            <button type="button" class="btn btn-outline-primary">Right</button>
+          </section>
+          <br>
+          <section class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+            <button type="button" class="btn btn-outline-primary">Left</button>
+            <button type="button" class="btn btn-outline-primary">Middle</button>
+            <button type="button" class="btn btn-outline-primary">Right</button>
+          </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Nesting</h3>
+
+        <section class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <button type="button" class="btn btn-primary">1</button>
+            <button type="button" class="btn btn-primary">2</button>
+          
+            <section class="btn-group" role="group">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+              </ul>
+            </section>
+        </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Vertical variation</h3>
+
+        <section class="btn-group-vertical" role="group" aria-label="Vertical button group">
+            <button type="button" class="btn btn-primary">Button</button>
+            <button type="button" class="btn btn-primary">Button</button>
+            <button type="button" class="btn btn-primary">Button</button>
+            <button type="button" class="btn btn-primary">Button</button>
+            <button type="button" class="btn btn-primary">Button</button>
+            <button type="button" class="btn btn-primary">Button</button>
+        </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Variants</h3>
+
+        <section class="btn-group-vertical" role="group" aria-label="Vertical button group">
+            <button type="button" class="btn btn-primary">Button</button>
+            <button type="button" class="btn btn-primary">Button</button>
+            <section class="btn-group" role="group">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+              </ul>
+            </section>
+            <button type="button" class="btn btn-primary">Button</button>
+            <button type="button" class="btn btn-primary">Button</button>
+            <section class="btn-group" role="group">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+              </ul>
+            </section>
+            <section class="btn-group" role="group">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+              </ul>
+            </section>
+            <section class="btn-group" role="group">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+              </ul>
+            </section>
+        </section>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Variants</h3>
+
+        <section class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
+            <label class="btn btn-outline-danger" for="vbtn-radio1">Radio 1</label>
+            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+            <label class="btn btn-outline-danger" for="vbtn-radio2">Radio 2</label>
+            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+            <label class="btn btn-outline-danger" for="vbtn-radio3">Radio 3</label>
+        </section>
+
+    </section>
+
+
+    <h1 class="p-5">----Close button----</h1>
+
+    <section class="p-5">
+
+        <h3>Example</h3>
+
+        <button type="button" class="btn-close" aria-label="Close"></button>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Disabled state</h3>
+
+        <button type="button" class="btn-close" disabled aria-label="Close"></button>
+
+    </section>
+
+    <section class="p-5">
+
+        <h3>Dark variant</h3>
+
+        <section data-bs-theme="dark">
+            <button type="button" class="btn-close" aria-label="Close"></button>
+            <button type="button" class="btn-close" disabled="" aria-label="Close"></button>
+        </section>
+
+    </section>
+</body>
+</html>
